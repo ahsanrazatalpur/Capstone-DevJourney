@@ -1,4 +1,4 @@
-git :  Git is a service where we can uploud our code on cloud (github) where we can backup our code , clone , delete , create new any time on github repository 
+git :  Git is a service where we can uploud our code on cloud (github) where we can backup our code , clone , delete  any time on github repository 
 
 
 git repository : git repositoy or git repo or just repo is a folder or directory where we can upload specific code 

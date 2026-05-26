@@ -1,4 +1,4 @@
-here are all basic cmd for opration on github
+here are all basic cmd for opration on git
 
 
 1. First check if git installed or check git version
@@ -42,16 +42,16 @@ Why we make local git repo ?
     - This is only normal folder it doesnt know
         - To restore old code back in case code break
         - save all changes and snapshot commits 
-        - to se what i do yesterday
+        - to see what i do yesterday
         - save all history of code 
-        - It is fast and local 
-        - safe for testing and development
+       
 
     - but if make it local git repo then
        - it save all history 
        - It track all changes
        - it rollback to older version in case of break code 
        - it is fast and use for testing
+       - safe for testing and development
 
        To see all changes 
            - use cmd  : 
@@ -64,7 +64,36 @@ Why we make local git repo ?
              git reset --soft commitid -safest way to shift to that version of code
              git reset --hard commitid - to goto that version and delete all changes
              git remote add origin repo-link - connect git repo 
-            git push -u origin main  - upload code
+             git push -u origin main  - upload code
+             git reset - undo changes
+
+
+        
+
+2. Github Online Repo : 
+ 
+ A platform or project space where we upload our git local repo on internet 
+ 
+ Git local repo
+   - store code on pc
+   - can tace all version 
+   - restore old code
+
+
+ Git online repo
+    - Working with team 
+    - backup code online
+    - can be acces anywhere
+    - Portfolio / showcase project show 
+
+
+Github online repo cmd (It use same git cmd) :
+
+     - git remote add origin repo-link    // Link repo 
+     - git push -u origin main            // upload code on internet (github)
+     - git pull or just git pull origin main  // doewnlaod latest version of your project
+     - git clone repolink  to copy or download that repo in your pc
+
 
 
              
