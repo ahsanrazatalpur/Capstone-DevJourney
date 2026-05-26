@@ -93,6 +93,7 @@ Github online repo cmd (It use same git cmd) :
      - git push -u origin main            // upload code on internet (github)
      - git pull or just git pull origin main  // doewnlaod latest version of your project
      - git clone repolink  to copy or download that repo in your pc
+     - git push // for the next time your working on same repo
 
 
 
