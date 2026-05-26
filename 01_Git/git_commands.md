@@ -97,4 +97,5 @@ Github online repo cmd (It use same git cmd) :
 
 
              
-           
+Git = version control tool (local system)
+GitHub = online platform for Git projects
