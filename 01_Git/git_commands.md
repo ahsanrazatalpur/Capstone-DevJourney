@@ -55,9 +55,9 @@ Why we make local git repo ?
 
        To see all changes 
            - use cmd  : 
-             git init          - initilize git repo 
-             git add .         - upload file / changes
-             git commit - m    - to commit or messsage with any change 
+             git init           - initilize git repo 
+             git add .          - upload file / changes
+             git commit - m  "comments"  - to commit or messsage with any change 
              git log --online  - to see all code version (every commit = new version where we can rollback our code)
              git checkout commitid - safest or temporary way to shift to older version
              git checkout main  - to comback real or existing version of code
@@ -93,7 +93,7 @@ Github online repo cmd (It use same git cmd) :
      - git push -u origin main            // upload code on internet (github)
      - git pull or just git pull origin main  // doewnlaod latest version of your project
      - git clone repolink  to copy or download that repo in your pc
-     - git push // for the next time your working on same repo
+     
 
 
 
