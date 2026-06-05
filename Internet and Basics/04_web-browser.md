@@ -1,4 +1,4 @@
-Web-Browser : The Web browser is a software that allow us to acces , view and interact with differeny websites on the internet .
+Web-Browser : The Web browser is a software that allow us to acces , view and interact with different websites on the internet .
 
 Example : 
          1. Google Chrome
