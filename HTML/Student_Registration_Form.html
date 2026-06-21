@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+        <label for="name">Name : </label>
+        <input type="text" name="name" id="name" required placeholder="Enter your name here" minlength="5" maxlength="20">
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email here" minlength="5" maxlength="15"> <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required placeholder="Enter your password" minlength="8" maxlength="20">
+        <label for="gender">Gender :</label> <!--Only name should be same-->
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="others">Others</label>
+       <input type="radio" name="gender" id="others" value="others">
+
+        <br><br>
+        <label for="dateofbirth">Date of Birth :</label>
+        <input type="date" name="dateofbirth" id="dateofbirth" required>
+        <label for="phone">Phone : </label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required> <br><br>
+
+        <label for="country">Country :</label>
+        <select name="country" id="country" required>
+            <option value="default" selected disabled>Choose your county</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="city">City : </label>
+        <select name="city" id="city" required>
+        <option value="default" selected disabled>Choose your city</option>
+        <option value="Badin">Badin</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="hobbies">Hobbies : </label>
+        <label for="games">Play Games</label>
+        <input type="checkbox" name="hobbies" id="games" required>
+        <label for="books"> Read Books</label>
+        <input type="checkbox" name="hobbies" id="books">
+        <label for="traveling">Travelling</label>
+        <input type="checkbox" name="hobbies" id="traveling">
+        <label for="others">Others</label>
+        <input type="checkbox" name="hobbies" id="others"> <br><br>
+
+        <label for="address">Address : </label>
+        <textarea name="address" id="address" rows="3" cols="20" required minlength="20" maxlength="50"></textarea>
+        <br><br>
+        
+      
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+
+        </fieldset>
+
+    </form>
+  <h4>Things to remember</h4>
+  <ul>
+    <li>always use fieldset after form tag in form</li>
+    <li>Use legend for give title to form</li>
+    <li>always give name and id to every input field</li>
+    <li>always give value to radio box</li>
+    <li>Always use text area for address and also describe rows and cols</li>
+    <li>every id and for should be change only name can be same </li>
+    <li>use required attribute to important field</li>
+    <li>minlength and maxlegth should be also used in every posible field</li>
+    <li>Add required to one radio button in the group (or all of them, but one is enough</li>
+    <li>If you want at least one checkbox to be selected, add required to one checkbox in the group</li>
+  </ul>
+</body>
+</html>
