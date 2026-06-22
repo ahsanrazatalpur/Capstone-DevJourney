@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Admission Form</title>
+  </head>
+  <body>
+    <header>
+      <center><h1>College Admission Form</h1></center>
+    </header>
+    <main>
+      <fieldset>
+        <legend>Student Information</legend>
+        <form action="">
+          <label for="sname">Student Name : </label>
+          <input
+            type="text"
+            minlength="5"
+            maxlength="20"
+            required
+            placeholder="Enter Your Name Here"
+          />
+
+          <label for="age">Age : </label>
+          <input type="number" required placeholder="Enter Your Age Here" />
+          <br /><br />
+
+          <label for="phone">Phone : </label>
+          <input
+            type="tel"
+            required
+            placeholder="Enter Your Contact Number Here"
+          />
+          <label for="dateofbirth">Date Of Birth : </label>
+          <input type="date" required />
+          <br /><br />
+
+          <label for="gender">Gender : </label>
+          <select name="gender" id="gender">
+            <option value="default" selected disabled>Choose Gender</option>
+            <option value="male" >Male</option>
+            <option value="female" >Female</option>
+            <option value="Others" >Others</option>
+          </select>
+
+          <label for="relegion">Religion: </label>
+          <input
+            type="text"
+            required
+            placeholder="Enter Your Religion Here"
+            minlength="5"
+            maxlength="20"
+          />
+          <br /><br />
+
+          <label for="city">City :</label>
+          <select name="city" id="city">
+            <option value="default" disabled selected>Your City</option>
+            <option value="karachi">Karachi</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="sukkur">Sukkur</option>
+            <option value="larkana">Larkana</option>
+            <option value="nawabshah">Nawabshah</option>
+            <option value="mirpurkhas">Mirpurkhas</option>
+            <option value="badin">Badin</option>
+            <option value="jamshoro">Jamshoro</option>
+            <option value="dadu">Dadu</option>
+            <option value="shikarpur">Shikarpur</option>
+          </select>
+
+          <label for="domicile">District Of Domicile :</label>
+          <select name="domicile" id="domicile">
+            <option value="default" disabled selected>Your City</option>
+            <option value="karachi">Karachi</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="sukkur">Sukkur</option>
+            <option value="larkana">Larkana</option>
+            <option value="nawabshah">Nawabshah</option>
+            <option value="mirpurkhas">Mirpurkhas</option>
+            <option value="badin">Badin</option>
+            <option value="jamshoro">Jamshoro</option>
+            <option value="dadu">Dadu</option>
+            <option value="shikarpur">Shikarpur</option>
+          </select>
+          <br><br>
+            <label for="nic">Nic / Bform : </label>
+            <input
+            type="text"
+            minlength="10"
+            maxlength="50"
+            required
+            placeholder="Enter Your Nic/Bform Number"
+          />
+            <label for="email">Email : </label>
+            <input
+            type="email"
+            minlength="10"
+            maxlength="50"
+            required
+            placeholder="Enter Your Email Here"
+          /> <br><br>
+            <label for="address">Your Address : </label>
+            <textarea name="address" id="address" rows="8" cols="15"></textarea>
+
+        </form>
+      </fieldset>
+      <br>
+      
+      <fieldset>
+        <legend>Parent Information</legend>
+        <form action="">
+          <label for="sname">Fathers Name : </label>
+          <input
+            type="text"
+            minlength="5"
+            maxlength="20"
+            required
+            placeholder="Enter Your Father Here"
+          />
+
+          <label for="phone">Father's Phone : </label>
+          <input
+            type="tel"
+            required
+            placeholder="Enter Your Father Contact Number Here"
+          />
+          <br><br>
+
+          <label for="relegion">Religion: </label>
+          <input
+            type="text"
+            required
+            placeholder="Enter Your Religion Here"
+            minlength="5"
+            maxlength="20"
+          />
+
+          <label for="city">City :</label>
+          <select name="city" id="city">
+            <option value="default" disabled selected>Your City</option>
+            <option value="karachi">Karachi</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="sukkur">Sukkur</option>
+            <option value="larkana">Larkana</option>
+            <option value="nawabshah">Nawabshah</option>
+            <option value="mirpurkhas">Mirpurkhas</option>
+            <option value="badin">Badin</option>
+            <option value="jamshoro">Jamshoro</option>
+            <option value="dadu">Dadu</option>
+            <option value="shikarpur">Shikarpur</option>
+          </select>
+<br><br>
+          <label for="domicile">District Of Domicile :</label>
+          <select name="domicile" id="domicile">
+            <option value="default" disabled selected>Your City</option>
+            <option value="karachi">Karachi</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="sukkur">Sukkur</option>
+            <option value="larkana">Larkana</option>
+            <option value="nawabshah">Nawabshah</option>
+            <option value="mirpurkhas">Mirpurkhas</option>
+            <option value="badin">Badin</option>
+            <option value="jamshoro">Jamshoro</option>
+            <option value="dadu">Dadu</option>
+            <option value="shikarpur">Shikarpur</option>
+          </select>
+          <br><br>
+            <label for="nic">Nic / Bform : </label>
+            <input
+            type="text"
+            minlength="10"
+            maxlength="50"
+            required
+            placeholder="Enter Your Nic Number"
+          />
+            <label for="email">Email : </label>
+            <input
+            type="email"
+            minlength="10"
+            maxlength="50"
+            required
+            placeholder="Enter Your Father Email Here"
+          /> <br><br>
+            <label for="address">Your Address : </label>
+            <textarea name="address" id="address" rows="8" cols="15"></textarea>
+
+        </form>
+      </fieldset>
+      <br>
+
+    </main>
+  </body>
+</html>
