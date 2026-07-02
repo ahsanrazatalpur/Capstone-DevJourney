@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border In CSS</title>
+</head>
+<style>
+    /* border */
+    .border-example{
+        border: 2px solid black;
+    }
+
+
+
+    /* border Color */
+    .border-color{
+        border: 2px solid;
+        border-color: red;
+    }
+
+
+
+    /* border Width */
+    .border-width{
+        border-width:5px ;
+        border: solid black;
+    }
+
+    /* Border Style */
+    .border-style{
+        border-style: dashed;
+        border-style: dotted;
+        border-style: double;
+        border-style: groove;
+        border-style: hidden;
+        border-style: ridge;
+        border-style: solid;
+        border-style: inset;
+        border-style: outset;
+    }
+
+
+
+    /* Single Side Border Example */
+    .single-side-border{
+        border-top: 2px solid black;
+        border-right: 2px double blue;
+        border-bottom: 2px dotted green;
+        border-left: 2px groove pink;
+    }
+
+    /* Single Side Border Single Styling Only */
+    .single-side-border-single-styling{
+        border-left-width: 4px;
+        border-left-style: solid;
+        border-left-color: black;
+        border-top-color: orange;
+        border-top-style: dotted;
+        border-top-width:  4px;
+        border-bottom-width: 2px;
+        border-bottom-color: coral;
+        border-bottom-style: groove;
+        border-right-color: blueviolet;
+        border-right-width: 3px;
+        border-right-style: double;
+    }
+
+
+
+    /* Border raduis */
+    .border-raduis{
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+</style>
+<body>
+    <h1>Border In CSS</h1>
+    <p>In Css border are used to create line around an element</p>
+    
+    <h1>Syntax</h1>
+    <p>
+        selector:{
+            border = width style color;
+        }
+    </p>
+    <br>
+    <div class="border-example">
+        This is example box to create border around it
+    </div>
+
+
+    <br><br><hr>
+    <h2>Border Proeprties</h2>
+    <h3>1. Border Color</h3>
+    <div class="border-color">This is example for border box color</div>
+     <br><br><hr>
+
+
+     <h3>2. Border Width</h3>
+     <div class="border-width">This is an example for border width example</div>
+     <br><br><hr>
+
+     <h3>3. Border Style</h3>
+     <div class="border-style">This is Border Style</div>
+     <br><br><hr>
+
+     <h3>4. Single side Border Styling</h3>
+     <div class="single-side-border">This is Single side border example</div>
+
+      <br><br><hr>
+      <h3>Single Side Border Single Styling</h3>
+      <div class="single-side-border-single-styling">This is single side single style</div>
+
+      <br><br><hr>
+      <h3>Border Raduis</h3>
+      <div class="border-raduis">Border Raduis</div>
+     
+
+    
+
+</body>
+</html>

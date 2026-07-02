@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color in CSS</title>
+</head>
+<style>
+    /* Color by Name */
+.p1{
+    color: blue;
+    background: red;
+}
+
+/* Color by Hex */
+.sample-hex{
+color: #16937e;
+}
+
+/* Color by RGB */
+.sample-rgb{
+    color: rgb(188, 55, 255);
+}
+
+
+/* Color by RGBA */
+.sample-rgba{
+    color: rgba(23, 67, 60, 0.7);
+}
+
+
+/* Color by HSL */
+.sample-hsl{
+    color: hsl(20 , 40%, 20%);
+}
+
+
+/* Color by hsla */
+.sample-hsla{
+    background: hsla(300, 30%, 50%, 0.5);
+}
+</style>
+<body>
+    <h1>Color in CSS</h1>
+    <p><strong>Color</strong> is a property used to color the text , background , box 
+, shadow , border  and other elements</p>
+    
+<h3>Common Colors techniques</h3>
+<ul>
+    <li>Color by name</li>
+    <li>Color by HEX (#)</li>
+    <li>Color by RGB (Red, Green ,Blue)</li>
+    <li>Color by RGBA (Red, Green, Blue, Alpha(opacity))</li>
+    <li>Color by HSL (Hue  Saturation Light)</li>
+    <li>Color by HSLA (Hue Saturation Light Opacity)</li>
+</ul>
+<br>
+<hr>
+<H3>1. Color By name</H3>
+<p class="p1">Sample Text</p>
+<!-- CSS -->
+p1{
+    color : blue;
+}
+or 
+p{
+    backgroud : red;
+}
+<br>
+<hr>
+<h3>2. Color By HEX (#)</h3>
+<p class="sample-hex">Sample text to show color by hex</p>
+
+<!-- CSS -->
+.sample-hex{
+Color : #fff;
+}
+
+<h3>Color By RGB (Red , Green , Blue)</h3>
+<p>Note :  Every color is made up of red , green , blue mixture</p>
+<p>RGB has fixed number 0 to 255</p>
+<p class="sample-rgb">
+    This is sample text
+</p>
+
+<!-- CSS -->
+ .sample-rgb{
+    color : rgba(255, 200, 100) ;
+ }
+
+
+
+ <br><hr>
+
+ <h3>Color By RGBA (Red , Green , Blue, Alpha)</h3>
+ <p>Note : Here A mean alpha or the opacity of the color</p>
+ <p class="sample-rgba">This is a sample text</p>
+ <p>Alpha or opacity is max 1 and min 0</p>
+
+ <!-- CSS -->
+  .sample-rgba{
+    color : rgba(23, 44, 66 , 0.80)
+  }
+ 
+ <br><hr>
+ <h3>Color By HSL (Hue Saturation Lightness)</h3>
+ <p>Hue mean color , saturation mean color intensity and lightness mean brightness</p>
+ <p>hue max value is 0 to 360 and saturation and lightness max value is 0% to 100%</p>
+ <p class="sample-hsl">sample text</p>
+
+ <!-- CSS -->
+  .sample-hsl{
+    color : hsl(10, 20% , 50%)
+  }
+
+
+  <br><hr>
+  <h3>Color By HSLA</h3>
+  <p class="sample-hsla">This is sample text</p>
+
+  <!-- CSS -->
+.sample-hsla{
+    color: hsla(39, 70% 40%, 0.8)
+}
+ 
+</body>
+</html>

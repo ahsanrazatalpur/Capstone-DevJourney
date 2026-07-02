@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background in CSS</title>
+</head>
+<style>
+
+    /* Background-Color */
+.bg-color-red{
+    background: red;
+}
+.bg-color-green{
+    background: green;
+}
+.bg-color-blue{
+    background: blue;
+}
+.bg-color-hex{
+    background-color: #942626;
+}
+.bg-color-hex{
+    background-color: #942626;
+}
+.bg-color-rgb{
+    background-color: rgb(255 , 38, 200);
+}
+.bg-color-rgba{
+    background-color: rgb(255 , 38, 200, 0.5);
+}
+.bg-color-hsl{
+    background-color: hsl(255 , 38%, 30%);
+}
+.bg-color-hsla{
+    background-color: hsla(255 , 38%, 30% , 0.3);
+}
+.bg-color-trans{
+    background-color: transparent;  /*No bg Color*/
+}
+
+
+/* Background Image */
+/* single bg image */
+.bg-img{
+    height: 100px;
+    width: 100px;
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+    margin-bottom: 20px;
+}
+
+/* multiple-bg-img */
+.bg-img-mul{
+    height: 200px;
+    width: 400px;
+    background-image:url("https://images.unsplash.com/photo-1506744038136-46273834b3fb"), url("https://images.unsplash.com/photo-1517841905240-472988babdf9") ;
+}
+
+
+
+/* background repeat */
+.bg-img-rep{
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+    background-repeat: repeat;  /*Image will repeat*/
+    background-repeat: no-repeat; /*Image will not repeat*/
+    background-repeat:repeat-x;
+    background-repeat:repeat-y;
+    height: 200px;
+    width: 400px;
+}
+
+
+/* background position */
+.bg-pos{
+    background-image: url("https://images.unsplash.com/photo-1517841905240-472988babdf9");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-position: top right;
+    background-position: center;
+    background-position: bottom;
+    background-position: 50% 50%;
+    background-position: 20px 20px;
+    height: 200px;
+    width: 400px;
+}
+
+
+
+/* Background Size */
+.bg-size{
+     height: 200px;
+     width: 400px;
+     background-image: url("https://images.unsplash.com/photo-1517841905240-472988babdf9");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain; /*Full Visible as img  default size*/
+     background-size:cover; /*It will cover full container*/
+     background-size:auto;
+}
+
+/* Background Attachment */
+.bg-atatch{
+    height: 400px;
+    width: 800px;
+    background-image: url("https://images.unsplash.com/photo-1517841905240-472988babdf9");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /*Image will fixed at one popsition screen schrol but image not*/
+    background-attachment: scroll; /*Image will schrol with screen schrol */
+    background-attachment: local; /* Image schrole with the content of container */ 
+    margin-bottom: 50px;
+    
+}
+.bg-atatch-local{
+    height: 400px;
+    width: 800px;
+    background-image: url("https://images.unsplash.com/photo-1517841905240-472988babdf9");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local; /* Image schrole with the content of container */
+    margin-bottom: 50px;
+}
+.bg-atatch-schrol{
+    height: 400px;
+    width: 800px;
+    background-image: url("https://images.unsplash.com/photo-1517841905240-472988babdf9");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:scroll;
+    margin-top: 50px;
+}
+</style>
+<body>
+    <h1>Background In CSS</h1>
+    <p class="bg-color-red">Sample background Color</p>
+    <p class="bg-color-green">Sample background Color</p>
+    <p class="bg-color-blue">Sample background Color</p>
+    <p class="bg-color-hex">Sample background Color</p>
+    <p class="bg-color-rgb">Sample background Color</p>
+    <p class="bg-color-rgb">Sample background Color</p>
+    <p class="bg-color-rgba">Sample background Color</p>
+    <p class="bg-color-hsl">Sample background Color</p>
+    <p class="bg-color-hsla">Sample background Color</p>
+    <p class="bg-color-tans">Sample background Color</p>  <!--No bg Color-->
+     <br><br><hr>
+
+
+    <h1>Background Image</h1>
+    <div class="bg-img">Sample Image</div>
+    <div class="bg-img-mul">Sample Multiple Image</div>
+    <br><br><hr>
+
+
+    <h1>2. Background Repeat</h1>
+    <div class="bg-img-rep">Smaple repeat Test</div>
+
+
+    <h1>background Position</h1>
+    <div class="bg-pos">Background Position</div>
+
+    <h1>Background Size</h1>
+    <div class="bg-size">Background Size</div>
+    
+    <h1> Background Attachment</h1>
+    <div class="bg-atatch">Background Attachment</div>
+    <div class="bg-atatch-local"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolor, omnis aspernatur corporis dolorem rerum quibusdam quam aut eius voluptas aliquam aliquid incidunt, distinctio non sequi nemo commodi maiores vitae magnam perspiciatis! Beatae eos soluta nisi explicabo quam quae fugit? Maxime, perferendis atque. Dignissimos ex mollitia laboriosam libero exercitationem voluptatem sunt incidunt eligendi ad! Laboriosam aspernatur porro delectus vel nam repellendus placeat odit adipisci quam maiores, natus officia doloremque recusandae assumenda temporibus voluptatibus exercitationem aliquam! Molestias aliquam provident ullam, vel quaerat natus, quo voluptatibus cum officiis iste amet vitae, quidem officia consectetur nisi tempora suscipit illum accusamus explicabo veritatis quasi! Aut maxime laboriosam ratione commodi recusandae aspernatur quasi quam animi qui accusamus sequi perspiciatis quia autem laudantium, sint ipsum voluptates ipsam nisi, repellendus ipsa officiis. Repellat modi cupiditate autem ex unde nostrum iure, numquam laboriosam est tenetur eum saepe libero blanditiis hic omnis. Velit eum inventore deserunt saepe quia voluptas fugiat eius ipsum? Incidunt quae doloremque, aperiam minima voluptas eligendi unde suscipit nam, vel, nesciunt ex aspernatur laborum earum. Dignissimos quam neque sed molestiae sit. Non esse debitis id perspiciatis omnis odit illo accusamus quos quod fugiat soluta, iure, iusto, laboriosam explicabo ipsam labore. Natus dolores dolorem debitis a reprehenderit vero aperiam. Dolore pariatur enim iure inventore magnam sit corporis at, delectus doloribus officia officiis, ratione quam nobis earum exercitationem accusantium! Iure possimus laudantium neque in nulla magnam nam enim, similique eaque, nobis voluptatem totam tempore perspiciatis quidem maxime quis illum sapiente nihil vitae laborum? Odit voluptates molestiae, ullam alias quos, quia quidem eos ex id beatae laborum porro quaerat ducimus architecto. Possimus, eum voluptate? Eos ex explicabo quidem odit incidunt? Hic quo nostrum excepturi culpa explicabo minus voluptas? Porro, delectus. Laborum dolore optio, repellat eaque animi tempora odit quae cumque, sunt est reprehenderit harum voluptatibus mollitia repellendus excepturi illo sapiente inventore possimus molestias nam minus hic, aperiam provident. Consequuntur voluptatum dolorum minus omnis veritatis est quae repellendus iste accusantium aut quam non beatae quos dolorem fugiat, voluptatem quod atque, voluptas nam, repellat vero! Quae consectetur alias eveniet dignissimos itaque quidem eum cupiditate officiis molestias nemo, vel consequuntur quibusdam, molestiae, voluptatum non commodi laudantium nesciunt doloribus reprehenderit. Vel reiciendis reprehenderit illum unde quam quaerat voluptates quis laboriosam ratione itaque officia debitis a ab, alias nobis saepe neque vero pariatur cumque provident sint maxime eveniet nemo. Ut, nihil facilis pariatur tempora ex dolore facere minus temporibus sunt cupiditate aut, repellat autem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur accusamus, repellendus dolore eum qui maiores a iusto quia incidunt cum, ea harum expedita voluptatem ducimus ex ipsa iste explicabo excepturi voluptates exercitationem? Laudantium iusto rem iure, minima quod molestias optio reprehenderit mollitia unde accusamus deserunt quas magnam ullam ex! Neque officiis accusantium illum veniam mollitia. Atque laboriosam natus debitis eveniet provident eum beatae, nulla labore nostrum minus distinctio adipisci fugiat tenetur veritatis iure vero, laborum, qui obcaecati molestias. Nam eligendi sequi possimus aspernatur necessitatibus, et ipsum laudantium, iure distinctio eaque error! Pariatur placeat numquam cupiditate sit neque natus ad architecto, est at, earum sint nulla accusantium quo corrupti autem vero ab dolor expedita adipisci quos amet deleniti illum quidem. Molestias, laborum optio, deleniti, numquam eum sapiente a enim velit quod distinctio tempora necessitatibus quas possimus praesentium. Magnam rem, assumenda porro illum, ex suscipit obcaecati est vitae officiis, incidunt natus quibusdam. Accusantium itaque eos natus. Odio odit veniam minima dolores distinctio commodi reprehenderit voluptates aliquid quasi temporibus iusto quisquam autem quos accusantium eius, provident molestiae, dolore illo deleniti perferendis, assumenda alias possimus nemo. Odio repellat sequi culpa facere, quos sunt possimus ut corrupti ipsam. Ab exercitationem totam pariatur molestiae sint voluptas.</div>
+    <div class="bg-atatch-schrol"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolor, omnis aspernatur corporis dolorem rerum quibusdam quam aut eius voluptas aliquam aliquid incidunt, distinctio non sequi nemo commodi maiores vitae magnam perspiciatis! Beatae eos soluta nisi explicabo quam quae fugit? Maxime, perferendis atque. Dignissimos ex mollitia laboriosam libero exercitationem voluptatem sunt incidunt eligendi ad! Laboriosam aspernatur porro delectus vel nam repellendus placeat odit adipisci quam maiores, natus officia doloremque recusandae assumenda temporibus voluptatibus exercitationem aliquam! Molestias aliquam provident ullam, vel quaerat natus, quo voluptatibus cum officiis iste amet vitae, quidem officia consectetur nisi tempora suscipit illum accusamus explicabo veritatis quasi! Aut maxime laboriosam ratione commodi recusandae aspernatur quasi quam animi qui accusamus sequi perspiciatis quia autem laudantium, sint ipsum voluptates ipsam nisi, repellendus ipsa officiis. Repellat modi cupiditate autem ex unde nostrum iure, numquam laboriosam est tenetur eum saepe libero blanditiis hic omnis. Velit eum inventore deserunt saepe quia voluptas fugiat eius ipsum? Incidunt quae doloremque, aperiam minima voluptas eligendi unde suscipit nam, vel, nesciunt ex aspernatur laborum earum. Dignissimos quam neque sed molestiae sit. Non esse debitis id perspiciatis omnis odit illo accusamus quos quod fugiat soluta, iure, iusto, laboriosam explicabo ipsam labore. Natus dolores dolorem debitis a reprehenderit vero aperiam. Dolore pariatur enim iure inventore magnam sit corporis at, delectus doloribus officia officiis, ratione quam nobis earum exercitationem accusantium! Iure possimus laudantium neque in nulla magnam nam enim, similique eaque, nobis voluptatem totam tempore perspiciatis quidem maxime quis illum sapiente nihil vitae laborum? Odit voluptates molestiae, ullam alias quos, quia quidem eos ex id beatae laborum porro quaerat ducimus architecto. Possimus, eum voluptate? Eos ex explicabo quidem odit incidunt? Hic quo nostrum excepturi culpa explicabo minus voluptas? Porro, delectus. Laborum dolore optio, repellat eaque animi tempora odit quae cumque, sunt est reprehenderit harum voluptatibus mollitia repellendus excepturi illo sapiente inventore possimus molestias nam minus hic, aperiam provident. Consequuntur voluptatum dolorum minus omnis veritatis est quae repellendus iste accusantium aut quam non beatae quos dolorem fugiat, voluptatem quod atque, voluptas nam, repellat vero! Quae consectetur alias eveniet dignissimos itaque quidem eum cupiditate officiis molestias nemo, vel consequuntur quibusdam, molestiae, voluptatum non commodi laudantium nesciunt doloribus reprehenderit. Vel reiciendis reprehenderit illum unde quam quaerat voluptates quis laboriosam ratione itaque officia debitis a ab, alias nobis saepe neque vero pariatur cumque provident sint maxime eveniet nemo. Ut, nihil facilis pariatur tempora ex dolore facere minus temporibus sunt cupiditate aut, repellat autem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur accusamus, repellendus dolore eum qui maiores a iusto quia incidunt cum, ea harum expedita voluptatem ducimus ex ipsa iste explicabo excepturi voluptates exercitationem? Laudantium iusto rem iure, minima quod molestias optio reprehenderit mollitia unde accusamus deserunt quas magnam ullam ex! Neque officiis accusantium illum veniam mollitia. Atque laboriosam natus debitis eveniet provident eum beatae, nulla labore nostrum minus distinctio adipisci fugiat tenetur veritatis iure vero, laborum, qui obcaecati molestias. Nam eligendi sequi possimus aspernatur necessitatibus, et ipsum laudantium, iure distinctio eaque error! Pariatur placeat numquam cupiditate sit neque natus ad architecto, est at, earum sint nulla accusantium quo corrupti autem vero ab dolor expedita adipisci quos amet deleniti illum quidem. Molestias, laborum optio, deleniti, numquam eum sapiente a enim velit quod distinctio tempora necessitatibus quas possimus praesentium. Magnam rem, assumenda porro illum, ex suscipit obcaecati est vitae officiis, incidunt natus quibusdam. Accusantium itaque eos natus. Odio odit veniam minima dolores distinctio commodi reprehenderit voluptates aliquid quasi temporibus iusto quisquam autem quos accusantium eius, provident molestiae, dolore illo deleniti perferendis, assumenda alias possimus nemo. Odio repellat sequi culpa facere, quos sunt possimus ut corrupti ipsam. Ab exercitationem totam pariatur molestiae sint voluptas.</div>
+
+
+</body>
+</html>

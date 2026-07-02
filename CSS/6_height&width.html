@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width</title>
+    <style>
+        .box{
+            height: 100px; 
+            width: 100px;
+            border: 2px solid black;
+            height: 20%;  /*20% of parent element*/
+            width: 50%;  /*50% of parent element*/
+            width: 100vw; /*100% width of browser*/
+            height: 100vh; /*100% of height of browser*/
+            height: auto; /*browser auto calculate (depend on height)*/
+            width: auto;  /*auto according to content (take 100% of parent element*/
+            max-width: 500px; /*width never exceed or cross 500px*/
+            min-width: 50px; /*width cannot be less than 50px*/
+            max-height: 500px; /*height never exceed or cross 500px*/
+            min-height: 50px; /*heightcannot be less than 50px*/
+         }
+    </style>
+</head>
+<body>
+    <h1>Height and Width</h1>
+    <p>Height and width define the size of the element</p>
+     <br><br><hr>
+
+    <div class="box">Box</div>
+    <p>
+        min-width = "Never go below this.
+        max-width = "Never go above this.
+    </p>
+</body>
+</html>

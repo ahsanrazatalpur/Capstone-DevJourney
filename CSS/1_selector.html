@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector in CSS</title>
+</head>
+<style>
+    h1{
+        color:blue;
+    }
+</style>
+<body>
+    <h1>Selector in CSS</h1>
+<strong>Selector</strong> <p>: A selector is used to select HTML element that we 
+want to style
+</p>
+
+<strong>Synatx : </strong>
+<p>
+    
+Selector : {
+    property : value;
+}
+
+</p>
+<h1>Example Selector</h1>
+
+<strong>Example : </strong>
+<p>
+    
+h1{
+    color : blue;
+}
+
+Here 
+
+h1 -> Selector
+color -> property
+blue -> value
+</p>
+
+<h3>There are three types of selector</h3>
+<ul>
+    <li>Id selector (for single elemet)</li>
+    <li>Class Selector (for multiple element)</li>
+    <i>Group Selector (For group element)</i>
+</ul>
+
+<h3>ID selector</h3>
+<h1 id="sample-id">Sample Text</h1>
+
+#sample-id{
+    Color : red;
+}
+<br><hr>
+<h3>Class selector</h3>
+<h1 class="sampl-class">Sample Text</h1>
+
+.sample-id{
+    Color : red;
+}
+<br><hr>
+<h3>Group selector</h3>
+<h1 class="sampl-class">Sample Text</h1>
+<h2>Sample para</h2>
+<p>This is a paragraph</p>
+
+.sample-id, h2, p{
+    Color : red;
+}
+<br><hr>
+</body>
+</html>

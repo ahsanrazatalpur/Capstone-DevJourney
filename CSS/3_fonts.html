@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wdth@0,94;1,94&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    /* font family */
+.sample{
+    font-family:monospace;
+    font-family: 'Courier New', Courier, monospace;
+    /* we always try fallback list of fonts in case first one doest find by browser then shift to next */
+}
+
+/* font weight */
+.sample-weight-100{ /*Thin*/
+    font-weight: 100;
+}
+.sample-weight-200{
+    font-weight: 200;
+}
+.sample-weight-300{
+    font-weight: 300;
+}
+.sample-weight-400{
+    font-weight: 400;
+}
+.sample-weight-500{
+    font-weight: 500;
+}
+.sample-weight-600{
+    font-weight: 600;
+}
+.sample-weight-700{
+    font-weight: 700;
+}
+.sample-weight-800{
+    font-weight: 800;
+}
+.sample-weight-900{ /*Black*/
+    font-weight: 900;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.font-weight-bold{
+    font-weight: bolder;
+}
+.font-weight-lighter{
+    font-weight: lighter;
+}
+.font-weight-normal{
+    font-weight: normal;
+}
+
+
+
+/* Font size */
+.font-size-large{ 
+    font-size: large;
+}
+.font-size-larger{
+    font-size:larger;
+}
+.font-size-meduim{
+    font-size:medium;
+}
+.font-size-small{
+    font-size:small;
+}
+.font-size-smaller{
+    font-size:smaller;
+}
+.font-size-x-large{
+    font-size:x-large;
+}
+.font-size-xx-small{
+    font-size:xx-small;
+}
+
+
+
+/* Font style */
+.font-style-normal{
+    font-style: normal;
+}
+.font-style-italic{
+    font-style:italic;
+}
+.font-style-oblique{
+    font-style:oblique;
+}
+.font-style-inherit{
+    font-style:inherit;
+}
+.font-style-initial{
+    font-style:initial;
+}
+
+
+
+/* Font Varient */
+.sample-varient-small{
+    font-variant: small-caps; /*All large letter but size small*/
+}
+.sample-varient-caps{
+    font-variant: small-caps; /*All large letter but size large*/
+}
+
+
+/* Line height  (space bw two line up and down*/
+.line-height{
+    line-height: 10px;
+    line-height: 20px;
+}
+
+
+/* Letter Spacing (Space between letters) */
+.sample-letter-spacing{
+letter-spacing: 10px;
+letter-spacing: 50px;
+}
+
+
+/* Word Spacing (Space bw Words*/
+.sample-word-spacing{
+    word-spacing: 10px;
+    word-spacing: 30px;
+}
+
+
+
+/* Text Transform */
+.text-transform-upper{
+    text-transform: uppercase;
+}
+.text-transform-lower{
+    text-transform: lowercase;
+}
+.text-transform-capitalize{
+    text-transform: capitalize;
+}
+
+
+
+/* Font Shorthand */
+/* Long way Styling */
+/* .sample-fonts-shorthand{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: 500;
+    font-style: italic;
+    word-spacing: 10px;
+    color: red;
+} */
+
+/*One line Short Hand way to style*/
+.sample-fonts-shorthand{ /*Sequence is necessary in shorthand*/
+    font: italic bold 18px/1.5 Arial, sans-serif;
+}
+
+/* Google Fonts */
+
+.google-fonts-1{
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.google-fonts-2{
+    font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+<body>
+    <h1>Fonts In CSS</h1>
+    <p>In Css font are controlled using font property</p>
+     <p>There are so many Fonts property are mentioned below</p>
+     <br>
+     <h1>1. Font Family</h1>
+     <p>Specify the font to use to font style</p>
+     <p class="sample">Sample Font</p>
+     <br><hr>
+
+
+     <h1>2. Font weight</h1>
+     <p class="sample-weight-100">This is sample font weight 100</p>
+     <p class="sample-weight-200">This is sample font weight 200</p>
+     <p class="sample-weight-300">This is sample font weight 300</p>
+     <p class="sample-weight-400">This is sample font weight 400</p>
+     <p class="sample-weight-500">This is sample font weight 500</p>
+     <p class="sample-weight-600">This is sample font weight 600</p>
+     <p class="sample-weight-700">This is sample font weight 700</p>
+     <p class="sample-weight-800">This is sample font weight 800</p>
+     <p class="sample-weight-900">This is sample font weight 900</p>
+     <p class="sample-weight-bold">This is sample font weight bold</p>
+     <p class="sample-weight-bolder">This is sample font weight bolder</p>
+     <p class="sample-weight-lighter">This is sample font weight lighter</p>
+     <p class="sample-weight-normal">This is sample font weight normal</p>
+     <br><hr><br>
+
+
+     <h1>3. Font Size</h1>
+     <p class="font-size-large">This is sample font size large</p>
+     <p class="font-size-larger">This is sample font size larger</p>
+     <p class="font-size-meduim">This is sample font size meduim</p>
+     <p class="font-size-small">This is sample font size small</p>
+     <p class="font-size-smaller">This is sample font size smaller</p>
+     <p class="font-size-x-large">This is sample font size x-large</p>
+     <p class="font-size-xx-small">Thisx-small is sample font size xx-small</p>
+
+
+
+     <h1>4. Font style</h1>
+     <p class="font-style-normal">This is sample font style normal</p>
+     <p class="font-style-italic">This is sample font style Italic</p>
+     <p class="font-style-oblique">This is sample font style oblique</p>
+     <p class="font-style-inherit">This is sample font style inherit</p>
+     <p class="font-style-initial">This is sample font style initial</p>
+
+
+
+     <h1>5. Font Varient (create or small letter)</h1>
+     <p class="sample-varient-small">this is sample font varient small latter</p>
+     <p class="sample-varient-caps">THIS IS SMALL FONT VARIENT LARGE LETTER</p>
+
+
+     <h1>6. Line height (Space between lines)</h1>
+     <p class="line-height">This is sample line height</p>
+
+
+     <h1>7. Letter Spacing (Space between Letters)</h1>
+     <p class="sample-letter-spacing">This is sample letter spacing</p>
+
+
+     <h1>8. Word Spacing (Space between Word)</h1>
+     <p class="sample-word-spacing">This is sample word spacing</p>
+
+
+     <h1>9. Text Transform (Upper, Lower, Capitilize)</h1>
+     <p class="text-transform-upper">This is sample Text Transform Upper Case</p>
+     <p class="text-transform-lower">This is sample Text Transform Lower Case</p>
+     <p class="text-transform-capitalize">This is sample Text Transform Capitilize Case</p>
+
+     <h1>10. Shorthand Fonts</h1>
+     <p class="sample-fonts-shorthand">Sample shorthand font</p>
+
+
+
+     <h1>Google Fonts Styling Online</h1>
+     <p class="google-fonts-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates aspernatur reiciendis nulla consectetur expedita dignissimos in magni quam unde quo voluptatem quia deserunt quasi beatae, et, eveniet eaque consequuntur quibusdam.</p>
+     <p class="google-fonts-2">Why ?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates aspernatur reiciendis nulla consectetur expedita dignissimos in magni quam unde quo voluptatem quia deserunt quasi beatae, et, eveniet eaque consequuntur quibusdam.</p>
+
+
+
+
+</body>
+</html>

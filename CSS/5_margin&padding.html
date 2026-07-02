@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin And Padding</title>
+</head>
+<style>
+
+
+/* Padding */
+.padding-example{
+    border: 2px solid black;
+    color: red;
+    background-color: yellow;
+    padding: 20px;
+}
+
+/* padding properties practice */
+.padding-practice{
+    height: 50px;
+    border: 2px solid black;
+    background-color: pink;
+    padding-left: 20px;  /*left space between content and border*/
+    padding-right: 1px;  /*right space between content and border*/
+    padding-top: 30px;   /*top space between content and border*/
+    padding-bottom: 50px; /*top space between content and border*/
+    padding: 20px 40px;  /*20 is vertical padding and 40 is horizental*/
+    padding: 20px 40px 60px; /*Here 20 is top and 40 is left and right  and 60 is bottom*/
+    padding: 10px; /*Up down left right all = 10*/
+}
+
+
+
+
+/* Margin Example */
+.margin-example{
+    background-color: rgb(210, 210, 108);
+    border: 2px solid black;
+    margin: 20px; /*All margin 20 Up Down left Right*/
+}
+
+
+/* Margin Propertie */
+.margin-properties{
+    height: 50px;
+    background-color: rgb(218, 70, 70);
+    border: 2px solid black;
+    margin-top: 20px; /*Space from top bw border and other elements*/
+    margin-left: 20px; /*Space from left bw border and other elements*/
+    margin-right: 20px; /*Space from right bw border and other elements*/
+    margin-bottom: 20px; /*Space from bottom bw border and other elements*/
+    margin: 10px 20px 40px; /*Margin 10 from top , 20 from left and right and 40 is bottom*/
+    margin: auto;  /*browser auto calculate top right bottom left margin according to parent element*/
+    margin: 0 auto;  /*margin 0 on top bottom and auto equal on left right*/
+}
+</style>
+<body>
+    <h1>Margin and Padding</h1>
+
+    +---------------------------+  <br>
+|        Margin             |  ← Outside the border <br>
+|  +---------------------+  | <br>
+|  |      Border         |  | <br>
+|  | +-----------------+ |  | <br>
+|  | |    Padding      | |  |  ← Inside the border <br>
+|  | | +-------------+ | |  | <br>
+|  | | |   Content   | | |  | <br>
+|  | | +-------------+ | |  | <br>
+|  | +-----------------+ |  | <br>
+|  +---------------------+  | <br>
++---------------------------+ <br>
+
+<br><br><hr>
+<h3>1. Padding</h3>
+<p>Padding create space between content and its border</p>
+<div class="padding-example">This is Padding Practice box</div>
+<br><br>
+
+
+<h3>Padding Properties</h3>
+ <div class="padding-practice">This is padding practice</div>
+
+
+
+ <h3>2. Margin</h3>
+ <p>Margin is space outside of border</p>
+ <div class="margin-example">This is margin Example</div>
+
+ <h3>Margin Properties</h3>
+ <div class="margin-properties">All Margin Properties</div>
+
+</body>
+</html>
