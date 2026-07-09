@@ -1,0 +1,336 @@
+# MONGODB MONGOSH PRACTICE NOTES
+
+==================================
+
+# BASIC COMMANDS
+
+1. OPEN MONGOSH
+
+---
+
+Command:
+mongosh
+
+Meaning:
+Starts MongoDB Shell and connects to MongoDB server.
+
+2. SHOW DATABASES
+
+---
+
+Command:
+show dbs
+
+Meaning:
+Displays all available databases.
+
+3. SWITCH / CREATE DATABASE
+
+---
+
+Command:
+use LaarDb
+
+Meaning:
+Switches to LaarDb database.
+If database does not exist, MongoDB creates it after inserting data.
+
+4. SHOW COLLECTIONS
+
+---
+
+Command:
+show collections
+
+Meaning:
+Displays all collections inside current database.
+
+5. CREATE COLLECTION
+
+---
+
+Command:
+db.createCollection("Student")
+
+Meaning:
+Creates a new collection named Student.
+
+6. RENAME COLLECTION
+
+---
+
+Command:
+db.Student.renameCollection("Students")
+
+Meaning:
+Renames Student collection to Students.
+
+7. FIND DOCUMENTS
+
+---
+
+Command:
+db.Students.find()
+
+Meaning:
+Displays all documents from Students collection.
+
+8. DROP COLLECTION
+
+---
+
+Command:
+db.Sample.drop()
+
+Meaning:
+Deletes Sample collection completely.
+
+9. DROP DATABASE
+
+---
+
+Command:
+db.dropDatabase()
+
+Meaning:
+Deletes current database completely.
+
+# INSERT COMMANDS
+
+10. INSERT ONE DOCUMENT
+
+---
+
+Command:
+db.Students.insertOne({
+name : "Ahsan Raza Talpur",
+Age : 22,
+Department : "Computer Science",
+email : "[ahsanraza@gmail.com](mailto:ahsanraza@gmail.com)"
+})
+
+Meaning:
+Inserts one document into Students collection.
+
+11. INSERT MULTIPLE DOCUMENTS
+
+---
+
+Command:
+db.Students.insertMany([
+{
+name : "Talha Arain",
+Age : 22,
+Department : "Computer Science",
+email : "[talhaarain@gmail.com](mailto:talhaarain@gmail.com)"
+},
+
+{
+name : "Haroon Abbas",
+Age : 23,
+Department : "Computer Science",
+email : "[haroonabbas@gmail.com](mailto:haroonabbas@gmail.com)"
+}
+])
+
+Meaning:
+Inserts multiple documents into Students collection.
+
+12. INSERT MULTIPLE TEACHER DOCUMENTS
+
+---
+
+Command:
+db.Teachers.insertMany([
+{
+professor : "Dr Dileep Kumar",
+Stage : "Professor",
+email : "[dileepkumar@gmail.com](mailto:dileepkumar@gmail.com)"
+},
+
+{
+professor : "Sir Inayat",
+Stage : "Assistant Professor",
+email : "[inayatsamoon@gmail.com](mailto:inayatsamoon@gmail.com)"
+},
+
+{
+professor : "Dr Fauzia Talpur",
+Stage : "Professor",
+email : "[fauziatalpur@gmail.com](mailto:fauziatalpur@gmail.com)"
+}
+])
+
+Meaning:
+Adds multiple teacher documents into Teachers collection.
+
+# VALIDATION / SCHEMA COMMAND
+
+13. CREATE COLLECTION WITH VALIDATOR
+
+---
+
+Command:
+db.createCollection("CS", {
+validator : {
+$jsonSchema : {
+
+```
+     bsonType : "object",
+
+     required : ["name", "age"],
+
+     description : "name and age must be required",
+
+     properties : {
+
+        name : {
+           bsonType : "string",
+           minLength : 8,
+           maxLength : 20,
+           description : "Name must be required"
+        },
+
+        age : {
+           bsonType : "int",
+           minimum : 2,
+           maximum : 9,
+           description : "Age must be required"
+        }
+     }
+  }
+```
+
+}
+})
+
+Meaning:
+Creates CS collection with schema validation rules.
+
+# IMPORTANT ERRORS & FIXES
+
+1.
+
+Wrong:
+createColletion
+
+Correct:
+createCollection
+
+2.
+
+Wrong:
+$jsonShema
+
+Correct:
+$jsonSchema
+
+3.
+
+Wrong:
+maxlength
+
+Correct:
+maxLength
+
+4.
+
+Wrong:
+show collection
+
+Correct:
+show collections
+
+5.
+
+Wrong:
+db.drop("Teachers")
+
+Correct:
+db.Teachers.drop()
+
+6.
+
+Wrong:
+db.dropdataBase()
+
+Correct:
+db.dropDatabase()
+
+7.
+
+Wrong:
+validator {
+
+Correct:
+validator : {
+
+8.
+
+Wrong:
+db.Teacher.renameCollection("Teachers")]
+
+Correct:
+db.Teacher.renameCollection("Teachers")
+
+9.
+
+Wrong:
+db.Students.insertMany({
+name : "Ali"
+})
+
+Correct:
+db.Students.insertMany([
+{ name : "Ali" }
+])
+
+10.
+
+Wrong:
+email : [ahsanraza@gmail.com](mailto:ahsanraza@gmail.com)
+
+Correct:
+email : "[ahsanraza@gmail.com](mailto:ahsanraza@gmail.com)"
+
+# IMPORTANT MONGODB CONCEPTS
+
+Database:
+Container that stores collections.
+
+Collection:
+Group of documents (similar to table).
+
+Document:
+Single record stored in MongoDB.
+
+db:
+Represents current database.
+
+insertOne():
+Insert single document.
+
+insertMany():
+Insert multiple documents.
+
+find():
+Display documents.
+
+drop():
+Delete collection.
+
+dropDatabase():
+Delete current database.
+
+renameCollection():
+Rename collection.
+
+$jsonSchema:
+Used for validation rules.
+
+mongosh:
+MongoDB command line shell.
+
+==================================
+END OF NOTES
+============

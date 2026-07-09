@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position In CSS</title>
+</head>
+<style>
+
+    /* Static (default) position */
+    .static-position{
+        position: static;
+        background-color: red;
+        top: 30px;
+    }
+
+    /* /Relative Position */
+    .box{
+        height: 30px;
+        width: 30px;
+    }
+    .box1{
+        background-color: red;
+    }
+    .box2{
+        background-color: rgb(51, 255, 0);
+        position: relative;
+        left: 50px;
+    }
+    .box3{
+        background-color: rgb(0, 30, 255);
+    }
+    
+
+    /* Position Absolute */
+    .parent{
+        position: relative;
+        background-color: rgb(192, 141, 166);
+        width: 300px;   
+
+    }
+    .child1{
+        background-color: hotpink;
+        height: 50px;
+        width: 50px;
+        margin-bottom: 10px;
+        border: 2px solid black;
+        
+    }
+    .child2{
+        background-color: rgb(105, 255, 243);
+        height: 50px;
+        width: 50px;
+        margin-bottom: 10px;
+        border: 2px solid black;
+        position: absolute;
+        left: 50px;
+    }
+    .child3{
+        background-color: rgb(255, 168, 105);
+        height: 50px;
+        width: 50px;
+        margin-bottom: 10px;
+        border: 2px solid black;
+    }
+
+
+    /* Position fixed */
+    .fixed{
+        background-color: red;
+        position: fixed;
+        top: 20px;
+        left: 10px;
+    }
+
+
+</style>
+<body>
+    <h1>Position In CSS</h1>
+    <p>Position : is a property that decide / control the position of the element</p>
+    <p>There are 5 type of positions in CSS</p>
+      <h1>1. Static (Default)</h1>
+
+        <div class="static-position">Static position is a default position of the element , Top, bottom , left and right 
+            doesn't work on it
+        </div>
+    <br><br><hr>
+
+    <h1>2. Relative Position</h1>
+    <p>Relative Position is a posiition where content can move from original position with the
+        help of top , bottom, left and right
+    </p>
+    <p>note : The original position will be reserved , the elemnt will be moved to new position but his 
+        old position still reserved , occupied or fill becuase browser consider it is still on same place
+        his old position will be free no other element can fill that position
+        Normal:
+
+     [A][B][C]
+
+     Relative (B moved right):
+
+      [A][    ][C]
+            ↘
+             [B]
+
+             [B] visually move ho gaya.
+             Lekin jahan pehle [B] tha, woh space khali hai, kyunki browser ne woh jagah reserve rakhi hui hai.
+             C us jagah ko fill nahi karega.
+    </p>
+    <h3>Example</h3>
+    <div class="box">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+    </div>
+    <br><br> <br><br><br><hr>
+
+    <h1>3. Position Absolute</h1>
+    <p>The Element can come out from its original docs flow</p>
+    <p>It reserved psoition according to nearest parent</p>
+    <h3>Example</h3>
+    <div class="parent">
+        <div class="child1">Child 1</div>
+        <div class="child2">Child 2</div>
+        <div class="child3">Child 3</div>
+    </div>
+    <br><br><br><hr>
+
+
+    <h3>4. Position Fixed</h3>
+    <p>Element will not change their position even when shrol</p>
+    <div class="fixed"></div>
+
+
+       
+
+
+
+    
+</body>
+</html>
